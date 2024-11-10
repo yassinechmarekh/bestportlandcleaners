@@ -78,6 +78,9 @@ module.exports = {
       fontFamily: {
         title: ['"Faculty Glyphic"', "sans-serif"],
       },
+      screens: {
+        'xs': '450px',
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

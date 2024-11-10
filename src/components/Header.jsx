@@ -110,7 +110,7 @@ export default function Header() {
       </div>
       <div
         className={
-          "py-2 bg-white sticky top-0 left-0 right-0 border-b border-slate-200 shadow-xl"
+          "py-2 bg-white sticky top-0 left-0 right-0 border-b border-slate-200 shadow-xl z-40"
         }
       >
         <div className="container">

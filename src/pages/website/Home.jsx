@@ -1,5 +1,10 @@
+import Hero from "@/components/Hero";
+import WhyChooseUs from "@/components/WhyChooseUs";
 import React from "react";
 
 export default function Home() {
-  return <div>Home</div>;
+  return <>
+  <Hero/>
+  <WhyChooseUs/>
+  </>;
 }

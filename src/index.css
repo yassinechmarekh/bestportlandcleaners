@@ -89,4 +89,13 @@
   .list-footer-link{
     @apply capitalize text-zinc-50 hover:text-white hover:font-semibold hover:scale-105 transition-all duration-300 ease-in-out;
   }
+  .list-why-choose-us{
+    @apply flex items-center gap-2 text-steel-blue font-semibold;
+  }
+  .main-btn{
+    @apply py-2 px-6 bg-steel-blue hover:bg-sky-900 text-white text-lg font-semibold capitalize transition-colors duration-300 ease-in-out;
+  }
+  .second-btn{
+    @apply py-2 px-6 bg-rose-bonbon hover:bg-pink-600 text-white text-lg font-semibold capitalize transition-colors duration-300 ease-in-out;
+  }
 }

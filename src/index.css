@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -27,7 +29,7 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
-    --radius: 0.5rem
+    --radius: 0.5rem;
   }
   .dark {
     --background: 0 0% 3.9%;
@@ -53,14 +55,38 @@
     --chart-2: 160 60% 45%;
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%
+    --chart-5: 340 75% 55%;
   }
 }
 @layer base {
   * {
     @apply border-border;
   }
+  html {
+    font-family: "Inter", sans-serif;
+  }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .container {
+    @apply px-4 sm:px-8 mx-auto;
+  }
+  .list-contact-info-header{
+    @apply flex items-center gap-2 text-slate-100 text-sm hover:text-pink-100 hover:scale-95  transition-all duration-300 ease-in-out;
+  }
+  .list-social-link-header{
+    @apply text-slate-800 hover:text-rose-bonbon hover:scale-95 transition-all duration-300 ease-in-out;
+  }
+  .list-social-link-menuheader{
+    @apply p-2 border-2 border-rose-bonbon rounded-full text-rose-bonbon bg-transparent hover:bg-rose-bonbon hover:text-white hover:scale-95 transition-all duration-300 ease-in-out;
+  }
+  .title-footer{
+    @apply text-3xl text-white font-bold capitalize mb-3;
+  }
+  .list-footer-link{
+    @apply capitalize text-zinc-50 hover:text-white hover:font-semibold hover:scale-105 transition-all duration-300 ease-in-out;
   }
 }

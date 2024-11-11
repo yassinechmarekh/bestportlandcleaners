@@ -39,17 +39,17 @@ const [playVideo, setPlayVideo] = useState(false);
             </span>
           </div>
           <div className="w-full lg:w-3/5 xl:w-1/2">
-            <h5 className={"text-xl text-steel-blue font-semibold capitalize"}>
+            <h5 className={"subtitle"}>
               Our Introduction
             </h5>
-            <h1 className="text-rose-bonbon font-title font-bold text-4xl xs:text-6xl leading-tight mb-4">
+            <h1 className="big-title">
               Welcome to Best Cleaning Company
             </h1>
             <p className={"text-steel-blue font-semibold leading-6 mb-2"}>
               Lorem ipsum dolor sit amet consectetur suspendisse nulla aliquam.
               Risus rutrum tellus ultrices amet facilisis.
             </p>
-            <p className="text-slate-600 leading-6">
+            <p className="parag">
               Commodo dictum iaculis eget mas phasellus ultrices nunc dignissim.
               Id nulla amet tincidunt urna sed massa the sed massa ultrices amet
               a egetristique maecenas condimentum dolor. dictum iaculis eget

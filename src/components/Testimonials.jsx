@@ -56,10 +56,10 @@ export default function Testimonials() {
             pagination={{ clickable: true }}
             loop={true}
             modules={[Pagination, Autoplay]}
-            // autoplay={{
-            //   delay: 3000,
-            //   disableOnInteraction: false,
-            // }}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+            }}
             className="mySwiper"
           >
             {testimonials.map((item, index) => (
@@ -85,11 +85,9 @@ export default function Testimonials() {
                         {item.name}
                       </h4>
                       <div className={"flex gap-1 text-yellow-500"}>
-                        <FaStar size={16} />
-                        <FaStar size={16} />
-                        <FaStar size={16} />
-                        <FaStar size={16} />
-                        <FaStar size={16} />
+                        {Array.from({ length: item.rate }, (_, index) => (
+                          <FaStar key={index} size={16} />
+                        ))}
                       </div>
                     </div>
                   </div>

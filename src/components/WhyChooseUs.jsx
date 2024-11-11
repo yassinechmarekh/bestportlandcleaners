@@ -42,7 +42,7 @@ const [playVideo, setPlayVideo] = useState(false);
             <h5 className={"text-xl text-steel-blue font-semibold capitalize"}>
               Our Introduction
             </h5>
-            <h1 className="text-rose-bonbon font-title font-bold text-6xl leading-tight mb-4">
+            <h1 className="text-rose-bonbon font-title font-bold text-4xl xs:text-6xl leading-tight mb-4">
               Welcome to Best Cleaning Company
             </h1>
             <p className={"text-steel-blue font-semibold leading-6 mb-2"}>

@@ -10,8 +10,8 @@ module.exports = {
         sm: "calc(var(--radius) - 4px)",
       },
       colors: {
-        'rose-bonbon': '#EE3E95',
-        'steel-blue': '#3B7BBE',
+        "rose-bonbon": "#EE3E95",
+        "steel-blue": "#3B7BBE",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {
@@ -79,7 +79,10 @@ module.exports = {
         title: ['"Faculty Glyphic"', "sans-serif"],
       },
       screens: {
-        'xs': '450px',
+        xs: "450px",
+      },
+      backgroundImage: {
+        "banner-1": "url('src/assets/images/banner/3.webp')",
       },
     },
   },

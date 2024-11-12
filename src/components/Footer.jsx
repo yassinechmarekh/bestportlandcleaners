@@ -172,7 +172,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className={"py-3 flex flex-col lg:flex-row justify-center lg:justify-between space-y-2 border-t border-neutral-50"}>
+        <div className={"py-3 flex flex-col lg:flex-row lg:items-center justify-center lg:justify-between space-y-2 border-t border-neutral-50"}>
           <p className={"text-zinc-50 text-center"}>
             &copy; 2024{" "}
             <Link to="/" className={"text-white hover:text-pink-100 font-bold"}>
@@ -180,22 +180,24 @@ export default function Footer() {
             </Link>
             , All Right Reserved. Designed By <Link className={"text-white hover:text-pink-100 font-bold"}>Yassine_ChM</Link>
           </p>
-          <div className={'flex items-center gap-2 justify-center'}>
-          <Link
-            className={
-              "text-zinc-50 hover:text-white capitalize transition-colors duration-300 ease-in-out"
-            }
-          >
-            privacy policy
-          </Link>
-          <span className={'text-zinc-50'}>-</span>
-          <Link
-            className={
-              "text-zinc-50 hover:text-white capitalize transition-colors duration-300 ease-in-out"
-            }
-          >
-            Terms & Conditions
-          </Link>
+          <div className={'flex items-center gap-x-2 justify-center'}>
+            <Link
+              to='/privacy-policy'
+              className={
+                "text-zinc-50 hover:text-white capitalize transition-colors duration-300 ease-in-out"
+              }
+            >
+              privacy policy
+            </Link>
+            <span className={'text-zinc-50'}>-</span>
+            <Link
+            to='/faq'
+              className={
+                "text-zinc-50 hover:text-white capitalize transition-colors duration-300 ease-in-out"
+              }
+            >
+              FAQ's
+            </Link>
           </div>
         </div>
       </div>

@@ -9,6 +9,8 @@ import Footer from "./components/Footer";
 import Login from "./pages/admin/Login";
 import Dashboard from "./pages/admin/Dashboard";
 import NotFound from "./pages/website/NotFound";
+import PrivacyPolicy from "./pages/website/Policy";
+import Faq from "./pages/website/Faq";
 
 function App() {
   return (
@@ -30,6 +32,8 @@ function App() {
             <Route path="services" element={<Services />} />
             <Route path="ourworks" element={<OurWorks />} />
             <Route path="contact" element={<Contact />} />
+            <Route path="privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="faq" element={<Faq />} />
           </Route>
           <Route path="/login" element={<Login />} />
           <Route path="/dashboard" element={<Dashboard />} />

@@ -9,7 +9,7 @@ import serviceImg4 from '../assets/icons/WindowCleaning.svg'
 import serviceImg5 from '../assets/icons/ResidentialCleaning.svg'
 import serviceImg6 from '../assets/icons/CarpetCleaning.svg'
 
-export default function Services() {
+export default function OurServices() {
     const services = [
         {
             img: serviceImg1,

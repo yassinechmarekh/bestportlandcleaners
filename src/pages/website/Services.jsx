@@ -1,7 +1,14 @@
-import React from 'react'
+import HeroServices from "@/components/HeroServices";
+import TopPage from "@/components/TopPage";
+import OurServices from "@/components/OurServices";
+import React from "react";
 
 export default function Services() {
   return (
-    <div>Services</div>
-  )
+    <>
+      <TopPage page="Our Services" />
+      <HeroServices />
+      <OurServices />
+    </>
+  );
 }

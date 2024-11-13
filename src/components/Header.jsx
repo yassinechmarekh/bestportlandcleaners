@@ -137,6 +137,7 @@ export default function Header() {
                 ))}
               </nav>
               <NavLink
+                to='/make-an-appointement'
                 className={
                   "px-4 py-2 bg-rose-bonbon hover:bg-pink-600 text-white transition-colors duration-300 ease-in-out"
                 }
@@ -190,6 +191,7 @@ export default function Header() {
             ))}
           </div>
           <Link
+            to='/make-an-appointement'
             className={
               "px-4 py-2 bg-rose-bonbon hover:bg-pink-600 text-white transition-colors duration-300 ease-in-out"
             }

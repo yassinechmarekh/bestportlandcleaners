@@ -119,4 +119,7 @@
   .input-contact{
     @apply py-4 border-b border-slate-600 text-slate-600 outline-none focus:border-rose-bonbon focus:text-rose-bonbon focus:placeholder:text-rose-bonbon focus:border-b-2 bg-transparent;
   }
+  .input-appointement{
+    @apply focus-visible:ring-offset-1 focus-visible:ring-offset-transparent focus-visible:ring-rose-bonbon focus-visible:ring-1 focus-visible:placeholder:text-rose-bonbon;
+  }
 }

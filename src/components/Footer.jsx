@@ -182,21 +182,21 @@ export default function Footer() {
           </p>
           <div className={'flex items-center gap-x-2 justify-center'}>
             <Link
-              to='/privacy-policy'
-              className={
-                "text-zinc-50 hover:text-white capitalize transition-colors duration-300 ease-in-out"
-              }
-            >
-              privacy policy
-            </Link>
-            <span className={'text-zinc-50'}>-</span>
-            <Link
             to='/faq'
               className={
                 "text-zinc-50 hover:text-white capitalize transition-colors duration-300 ease-in-out"
               }
             >
               FAQ's
+            </Link>
+            <span className={'text-zinc-50'}>-</span>
+            <Link
+              to='/privacy-policy'
+              className={
+                "text-zinc-50 hover:text-white capitalize transition-colors duration-300 ease-in-out"
+              }
+            >
+              privacy policy
             </Link>
           </div>
         </div>

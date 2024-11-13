@@ -12,6 +12,11 @@ import NotFound from "./pages/website/NotFound";
 import PrivacyPolicy from "./pages/website/Policy";
 import Faq from "./pages/website/Faq";
 import Appointement from "./pages/website/Appointement";
+import DashboardHeader from './components/Dashboard/Header'
+import DashboardFooter from './components/Dashboard/Footer'
+import DashboardAppointments from './pages/admin/Appointment'
+import AppointmentDetails from './pages/admin/AppointmentDetails'
+import Profile from './pages/admin/Profile'
 
 function App() {
   return (
@@ -38,7 +43,22 @@ function App() {
             <Route path="faq" element={<Faq />} />
           </Route>
           <Route path="/login" element={<Login />} />
-          <Route path="/dashboard" element={<Dashboard />} />
+          {/* <Route path="/dashboard" element={<Dashboard />} /> */}
+          <Route
+            path="/dashboard"
+            element={
+              <>
+                <DashboardHeader />
+                <Outlet />
+                <DashboardFooter />
+              </>
+            }
+          >
+            <Route index element={<Dashboard />} />
+            <Route path="appointments" element={<DashboardAppointments />} />
+            <Route path="appointments/details" element={<AppointmentDetails />} />
+            <Route path="profile" element={<Profile />} />
+          </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

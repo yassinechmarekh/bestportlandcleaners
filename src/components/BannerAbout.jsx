@@ -17,7 +17,7 @@ export default function BannerAbout() {
             the majority have suffered alteration in some form, by injected
             humour
           </p>
-          <Link className="main-btn">discover more</Link>
+          <Link to='/ourworks' className="main-btn">discover more</Link>
         </div>
       </div>
     </div>

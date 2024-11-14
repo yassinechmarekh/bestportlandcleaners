@@ -90,7 +90,7 @@ const [playVideo, setPlayVideo] = useState(false);
               </div>
             </ul>
             <div className={"flex flex-col xs:flex-row items-center gap-8"}>
-              <Link className={"second-btn"}>discover more</Link>
+              <Link to='/about' className={"second-btn"}>discover more</Link>
               <Link to="tel:+15034655331" className={"flex items-center gap-2"}>
                 <span className="p-3 bg-steel-blue rounded-full animate-pulse">
                   <FaPhoneAlt size={20} className={"text-white"} />

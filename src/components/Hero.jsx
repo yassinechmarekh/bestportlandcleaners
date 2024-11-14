@@ -46,6 +46,7 @@ export default function Hero() {
             </p>
             <div className="flex items-center gap-6">
               <Link
+                to='/services'
                 className={
                   "main-btn"
                 }

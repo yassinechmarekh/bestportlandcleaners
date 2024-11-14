@@ -21,14 +21,17 @@ export default function Footer() {
             <img src={logo} alt="logo" className="w-40" />
           </Link>
           <ul className={"flex gap-6"}>
-            <li className={"text-slate-100 hover:text-white"}>
-              <Link>facebook</Link>
+            <li className={"text-slate-100 hover:text-white capitalize"}>
+              <Link to='https://www.facebook.com/BPDXCleaners' target="_blank" >facebook</Link>
             </li>
-            <li className={"text-slate-100 hover:text-white"}>
-              <Link>instagram</Link>
+            <li className={"text-slate-100 hover:text-white capitalize"}>
+              <Link to='https://www.instagram.com/best_portland_cleaners/' target="_blank" >instagram</Link>
             </li>
-            <li className={"text-slate-100 hover:text-white"}>
-              <Link>yelp</Link>
+            <li className={"text-slate-100 hover:text-white capitalize"}>
+              <Link to='https://www.youtube.com/@Bestportlandcleaners' target="_blank" >youtube</Link>
+            </li>
+            <li className={"text-slate-100 hover:text-white capitalize"}>
+              <Link to='https://www.yelp.com/biz/best-portland-cleaners-portland' target="_blank" >yelp</Link>
             </li>
           </ul>
         </div>
@@ -88,31 +91,31 @@ export default function Footer() {
             <h1 className={"title-footer"}>what we do ?</h1>
             <ul className={"leading-8"}>
               <li className={"list-footer-link"}>
-                <Link to="#" className={"flex items-center gap-1"}>
+                <Link to="/services" className={"flex items-center gap-1"}>
                   <IoMdArrowDropright size={24} />
                   <span>Office Cleaning Service</span>
                 </Link>
               </li>
               <li className={"list-footer-link"}>
-                <Link to="#" className={"flex items-center gap-1"}>
+                <Link to="/services" className={"flex items-center gap-1"}>
                   <IoMdArrowDropright size={24} />
                   <span>Move-in & Move-out</span>
                 </Link>
               </li>
               <li className={"list-footer-link"}>
-                <Link to="#" className={"flex items-center gap-1"}>
+                <Link to="/services" className={"flex items-center gap-1"}>
                   <IoMdArrowDropright size={24} />
                   <span>Standard Home Cleaning</span>
                 </Link>
               </li>
               <li className={"list-footer-link"}>
-                <Link to="#" className={"flex items-center gap-1"}>
+                <Link to="/services" className={"flex items-center gap-1"}>
                   <IoMdArrowDropright size={24} />
                   <span>Home Deep Cleaning</span>
                 </Link>
               </li>
               <li className={"list-footer-link"}>
-                <Link to="#" className={"flex items-center gap-1"}>
+                <Link to="/services" className={"flex items-center gap-1"}>
                   <IoMdArrowDropright size={24} />
                   <span>Window Cleaning</span>
                 </Link>

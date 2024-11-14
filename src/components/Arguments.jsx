@@ -65,7 +65,7 @@ export default function Arguments() {
                 <p className={"parag mb-6"}>
                   {item.description}
                 </p>
-                <Link className={"main-btn"}>make an appointement</Link>
+                <Link to='/make-an-appointement' className={"main-btn"}>make an appointement</Link>
               </div>
               <div className="w-full md:w-2/5">
                 <img

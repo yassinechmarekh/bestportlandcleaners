@@ -87,7 +87,7 @@ export default function ServicesType() {
                     </li>
                   </div>
                 </ul>
-                <Link className={"main-btn py-3"}>make an appointement</Link>
+                <Link to='/make-an-appointement' className={"main-btn py-3"}>make an appointement</Link>
               </div>
               <div className="w-full lg:w-1/2 relative">
                 <img
@@ -169,7 +169,7 @@ export default function ServicesType() {
                     </li>
                   </div>
                 </ul>
-                <Link className={"main-btn py-3"}>make an appointement</Link>
+                <Link to='/make-an-appointement' className={"main-btn py-3"}>make an appointement</Link>
               </div>
               <div className="w-full lg:w-1/2 relative">
                 <img

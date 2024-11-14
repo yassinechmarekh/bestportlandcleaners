@@ -91,17 +91,17 @@ export default function Header() {
           </div>
           <ul className={"flex gap-3"}>
             <li className={"list-social-link-header"}>
-              <Link to="#" target="_blank">
+              <Link to="https://www.facebook.com/BPDXCleaners" target="_blank">
                 <FaFacebookF size={16} />
               </Link>
             </li>
             <li className={"list-social-link-header"}>
-              <Link to="#" target="_blank">
+              <Link to="https://www.instagram.com/best_portland_cleaners/" target="_blank">
                 <FaInstagram size={16} />
               </Link>
             </li>
             <li className={"list-social-link-header"}>
-              <Link to="#" target="_blank">
+              <Link to="https://www.yelp.com/biz/best-portland-cleaners-portland" target="_blank">
                 <FaYelp size={16} />
               </Link>
             </li>
@@ -185,6 +185,7 @@ export default function Header() {
                       : "text-slate-900 hover:text-rose-bonbon transition-colors duration-300 ease-in-out"
                   }`
                 }
+                onClick={() => setOpenMenu(false)}
               >
                 {item.name}
               </NavLink>
@@ -195,23 +196,24 @@ export default function Header() {
             className={
               "px-4 py-2 bg-rose-bonbon hover:bg-pink-600 text-white transition-colors duration-300 ease-in-out"
             }
+            onClick={() => setOpenMenu(false)}
           >
             Make an Appointment
           </Link>
         </div>
         <ul className={"flex justify-center gap-4"}>
           <li className={"list-social-link-menuheader"}>
-            <Link to="#" target="_blank">
+            <Link to="https://www.facebook.com/BPDXCleaners" target="_blank">
               <FaFacebookF size={16} />
             </Link>
           </li>
           <li className={"list-social-link-menuheader"}>
-            <Link to="#" target="_blank">
+            <Link to="https://www.instagram.com/best_portland_cleaners/" target="_blank">
               <FaInstagram size={16} />
             </Link>
           </li>
           <li className={"list-social-link-menuheader"}>
-            <Link to="#" target="_blank">
+            <Link to="https://www.yelp.com/biz/best-portland-cleaners-portland" target="_blank">
               <FaYelp size={16} />
             </Link>
           </li>

@@ -1,5 +1,7 @@
 import React from "react";
 
+import bannerImg from '../assets/images/banner/3.webp'
+
 export default function BannerStats() {
   const stats = [
     {
@@ -18,8 +20,9 @@ export default function BannerStats() {
   return (
     <div
       className={
-        "min-h-72 bg-banner-1 bg-cover bg-center relative after:bg-[#ee3e969b] after:absolute after:inset-0"
+        "min-h-72 bg-cover bg-center relative after:bg-[#ee3e969b] after:absolute after:inset-0"
       }
+      style={{ backgroundImage: `url(${bannerImg})` }}
     >
       <div className="container">
         <div className="py-4 relative xs:absolute xs:top-1/2 xs:left-0 xs:-translate-y-1/2 w-full z-10">

@@ -1,6 +1,6 @@
 import React from "react";
 
-import bannerImg from '../assets/images/banner/3.webp'
+import bannerImg from "../assets/images/banner/3.webp";
 
 export default function BannerStats() {
   const stats = [
@@ -20,7 +20,7 @@ export default function BannerStats() {
   return (
     <div
       className={
-        "min-h-72 bg-cover bg-center relative after:bg-[#ee3e969b] after:absolute after:inset-0"
+        "min-h-72 bg-cover bg-center relative after:bg-[#ee3e96cf] after:absolute after:inset-0"
       }
       style={{ backgroundImage: `url(${bannerImg})` }}
     >
@@ -32,7 +32,9 @@ export default function BannerStats() {
                 <h2 className={"text-6xl text-white font-bold"}>
                   {item.value}
                 </h2>
-                <h5 className={"text-xl text-steel-blue font-semibold capitalize"}>
+                <h5
+                  className={"text-xl text-steel-blue font-semibold capitalize"}
+                >
                   {item.name}
                 </h5>
               </div>

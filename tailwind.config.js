@@ -81,12 +81,12 @@ module.exports = {
       screens: {
         xs: "450px",
       },
-      backgroundImage: {
-        "banner-1": "url('src/assets/images/banner/3.webp')",
-        "banner-2": "url('src/assets/images/banner/1.webp')",
-        "banner-3": "url('src/assets/images/banner/2.webp')",
-        "login": "url('src/assets/images/team/all.webp')",
-      },
+      // backgroundImage: {
+      //   "banner-1": "url('src/assets/images/banner/3.webp')",
+      //   "banner-2": "url('src/assets/images/banner/1.webp')",
+      //   "banner-3": "url('src/assets/images/banner/2.webp')",
+      //   "login": "url('src/assets/images/team/all.webp')",
+      // },
     },
   },
   plugins: [require("tailwindcss-animate")],

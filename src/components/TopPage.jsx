@@ -4,12 +4,15 @@ import { motion } from "framer-motion";
 
 import { IoIosArrowForward } from "react-icons/io";
 
+import bannerImg from "../assets/images/banner/1.webp";
+
 export default function TopPage({ page }) {
   return (
     <div
       className={
-        "h-32 sm:h-48 bg-banner-2 bg-cover bg-bottom relative after:absolute after:inset-0 after:bg-[#ee3e9699] z-0"
+        "h-32 sm:h-48 bg-cover bg-bottom relative after:absolute after:inset-0 after:bg-[#ee3e9699] z-0"
       }
+      style={{ backgroundImage: `url(${bannerImg})` }}
     >
       <div className="container">
         <motion.div

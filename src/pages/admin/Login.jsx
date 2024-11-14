@@ -1,13 +1,11 @@
 import React from "react";
 
-
 import { buttonVariants } from "@/components/ui/button";
 import { UserAuthForm } from "@/components/Form/user-auth-form";
 import { Link } from "react-router-dom";
 
 import logo from "../../assets/images/logo/white-logo.png";
-
-
+import bannerImg from "../../assets/images/team/all.webp";
 
 export default function Login() {
   return (
@@ -21,7 +19,10 @@ export default function Login() {
         >
           Home
         </Link>
-        <div className="relative hidden h-full flex-col bg-login bg-cover object-left p-10 text-white lg:flex">
+        <div
+          className="relative hidden h-full flex-col bg-cover object-left p-10 text-white lg:flex"
+          style={{ backgroundImage: `url(${bannerImg})` }}
+        >
           <div className="absolute inset-0 bg-[#ee3e96e4]" />
           <div className="relative z-20 flex items-center text-lg font-medium">
             <img src={logo} alt="" className={"w-36"} />
@@ -30,7 +31,8 @@ export default function Login() {
             <blockquote className="space-y-2">
               <p className="text-lg">
                 &ldquo;Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Perspiciatis voluptas beatae soluta eligendi nesciunt adipisci.&rdquo;
+                Perspiciatis voluptas beatae soluta eligendi nesciunt
+                adipisci.&rdquo;
               </p>
               <footer className="text-sm">&copy; Best Portland Cleaners</footer>
             </blockquote>

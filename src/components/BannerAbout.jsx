@@ -1,12 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import bannerImg from "../assets/images/banner/2.webp";
+
 export default function BannerAbout() {
   return (
     <div
       className={
-        "bg-banner-3 bg-cover bg-bottom relative after:absolute after:inset-0 after:bg-[#ee3e969b] z-0"
+        "bg-cover bg-bottom relative after:absolute after:inset-0 after:bg-[#ee3e969b] z-0"
       }
+      style={{ backgroundImage: `url(${bannerImg})` }}
     >
       <div className="container">
         <div className={'py-20 w-full md:w-2/3 mx-auto text-center relative z-10'}>

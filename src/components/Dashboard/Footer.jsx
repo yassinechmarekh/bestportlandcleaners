@@ -11,7 +11,7 @@ export default function Footer() {
             Best Portland Cleaners
           </Link>
           , All Right Reserved. Designed By{" "}
-          <Link className={"text-white hover:text-pink-100 font-bold"}>
+          <Link to='https://yassine-chmarekh.vercel.app/' target="_blank" className={"text-white hover:text-pink-100 font-bold"}>
             Yassine_ChM
           </Link>
         </p>

@@ -17,7 +17,7 @@ export default function HeroServices() {
     <section className={"py-10 bg-pink-100"}>
       <div className="container">
         <div className="flex flex-col-reverse lg:flex-row items-center gap-12">
-          <div className="w-full lg:w-1/2">
+          <div className="w-full lg:w-1/2 mt-8 xs:mt-0">
             <h5 className={"subtitle mb-1"}>Best Experts in Cleaning</h5>
             <h1 className={"big-title"}>
               Your Happiness Is Our Frist Priority

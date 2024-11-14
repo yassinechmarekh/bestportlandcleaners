@@ -1,4 +1,5 @@
 import React from "react";
+import CountUp from 'react-countup';
 
 import bannerImg from "../assets/images/banner/3.webp";
 
@@ -16,6 +17,10 @@ export default function BannerStats() {
       name: "Years Of Experience",
       value: "32",
     },
+    {
+      name: "Trusted Clients",
+      value: "928",
+    },
   ];
   return (
     <div
@@ -25,12 +30,12 @@ export default function BannerStats() {
       style={{ backgroundImage: `url(${bannerImg})` }}
     >
       <div className="container">
-        <div className="py-4 relative xs:absolute xs:top-1/2 xs:left-0 xs:-translate-y-1/2 w-full z-10">
-          <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 gap-4">
+        <div className="py-8 sm:py-4 relative xs:absolute xs:top-1/2 xs:left-0 xs:-translate-y-1/2 w-full z-10">
+          <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-4 gap-4">
             {stats.map((item, index) => (
               <div key={index} className="flex flex-col items-center gap-2">
-                <h2 className={"text-6xl text-white font-bold"}>
-                  {item.value}
+                <h2 className={"text-4xl text-white font-bold"}>
+                  <CountUp start={0} end={item.value} duration={3} suffix="+" enableScrollSpy={true} scrollSpyOnce={true} />
                 </h2>
                 <h5
                   className={"text-xl text-steel-blue font-semibold capitalize"}

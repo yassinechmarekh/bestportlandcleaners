@@ -1,10 +1,11 @@
 import React from "react";
 import TopSection from "./TopSection";
+import {motion} from "framer-motion";
+import { Link } from "react-router-dom";
 
 import argumentImg1 from "../assets/images/about/argument-1.webp";
 import argumentImg2 from "../assets/images/about/argument-2.webp";
 import argumentImg3 from "../assets/images/about/argument-3.webp";
-import { Link } from "react-router-dom";
 
 export default function Arguments() {
   const argumentItems = [
@@ -65,10 +66,12 @@ export default function Arguments() {
                 <p className={"parag mb-6"}>
                   {item.description}
                 </p>
+                <motion.div whileTap={{ scale: 0.9 }} transition={{ duration: 0.3 }}>
                 <Link to='/make-an-appointement' className={"main-btn"}>make an appointement</Link>
+                </motion.div>
               </div>
               <div className="w-full md:w-2/5">
-                <img
+                <motion.img whileHover={{ scale: 0.9, rotate: 1 }} transition={{ duration: 0.3 }}
                   src={item.image}
                   alt={item.title}
                   className={

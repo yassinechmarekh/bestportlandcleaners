@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/carousel";
 import ModalVideo from "./ModalVideo";
 import BgOverlay from "./BgOverlay";
+import { motion } from "framer-motion";
 
 import Image1 from "../assets/images/hero/1.webp";
 import Image2 from "../assets/images/hero/2.webp";
@@ -21,7 +22,9 @@ export default function Hero() {
   const [playVideo, setPlayVideo] = useState(false);
   return (
     <section className={"py-10 bg-rose-bonbon relative"}>
-      <img
+      <motion.img
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 0.5, transition: { duration: 1, delay: 0.5 } }}
         src={bgElement}
         alt="bg elemnt"
         className={"absolute bottom-0 left-0 opacity-0 xl:opacity-50 w-52"}
@@ -29,31 +32,51 @@ export default function Hero() {
       <div className="container">
         <div className="flex flex-col lg:flex-row items-center gap-4">
           <div className={"w-full lg:w-1/2"}>
-            <h5 className={"text-2xl text-steel-blue font-semibold capitalize"}>
+            <motion.h5
+              initial={{ x: -100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ transition: 5, delay: 0.3 }}
+              className={"text-2xl text-steel-blue font-semibold capitalize"}
+            >
               We Keep All Clean
-            </h5>
-            <h1
+            </motion.h5>
+            <motion.h1
+              initial={{ x: -100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ transition: 5, delay: 0.5 }}
               className={
                 "text-6xl 2xl:text-8xl text-white font-title font-bold leading-tight 2xl:leading-snug mb-4"
               }
             >
               Cleaning For A Healthier Home
-            </h1>
-            <p className={"text-zinc-50 mb-6"}>
+            </motion.h1>
+            <motion.p
+              initial={{ x: -100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ transition: 5, delay: 0.7 }}
+              className={"text-zinc-50 mb-6"}
+            >
               There are many variations of passages of Lorem Ipsum available,
               but the majority have suffered alteration in some form, by
               injected If you are going to use a passage of Lorem Ipsum, you
-            </p>
+            </motion.p>
             <div className="flex items-center gap-6">
-              <Link
-                to='/services'
-                className={
-                  "main-btn"
-                }
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{
+                  opacity: 1,
+                  transition: { duration: 1, delay: 0.9 },
+                }}
+                whileTap={{ scale: 0.9, transition: { duration: 0.3 } }}
               >
-                explore more
-              </Link>
-              <button
+                <Link to="/services" className={"main-btn"}>
+                  explore more
+                </Link>
+              </motion.div>
+              <motion.button
+                initial={{ scale: 0 }}
+                animate={{ scale: 1, transition: { duration: 0.3, delay: 1 } }}
+                whileTap={{ scale: 0.8, transition: { duration: 0.3 } }}
                 className="bg-white rounded-full animate-pulse"
                 onClick={() => setPlayVideo(true)}
               >
@@ -63,7 +86,7 @@ export default function Hero() {
                     "text-sky-900 hover:text-steel-blue cursor-pointer transition-colors duration-300 ease-in-out"
                   }
                 />
-              </button>
+              </motion.button>
             </div>
           </div>
           <div className={"w-full lg:w-1/2"}>
@@ -72,7 +95,17 @@ export default function Hero() {
                 "hidden xl:grid  grid-cols-1 xl:grid-cols-2 gap-6 xl:min-h-[500px]"
               }
             >
-              <div
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{
+                  opacity: 1,
+                  transition: { duration: 1, delay: 0.3 },
+                }}
+                whileHover={{
+                  scale: 0.9,
+                  rotate: 3,
+                  transition: { duration: 0.3 },
+                }}
                 className={
                   "rounded-t-full border-8 border-steel-blue overflow-hidden"
                 }
@@ -82,8 +115,18 @@ export default function Hero() {
                   alt="hero img"
                   className={"object-cover w-full h-full"}
                 />
-              </div>
-              <div
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{
+                  opacity: 1,
+                  transition: { duration: 1, delay: 0.3 },
+                }}
+                whileHover={{
+                  scale: 0.9,
+                  rotate: 3,
+                  transition: { duration: 0.3 },
+                }}
                 className={
                   "row-span-2 rounded-2xl border-8 border-steel-blue overflow-hidden"
                 }
@@ -93,8 +136,18 @@ export default function Hero() {
                   alt="hero img"
                   className={"object-cover h-full"}
                 />
-              </div>
-              <div
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{
+                  opacity: 1,
+                  transition: { duration: 1, delay: 0.3 },
+                }}
+                whileHover={{
+                  scale: 0.9,
+                  rotate: -3,
+                  transition: { duration: 0.3 },
+                }}
                 className={
                   "rounded-2xl border-8 border-steel-blue overflow-hidden"
                 }
@@ -104,9 +157,15 @@ export default function Hero() {
                   alt="hero img"
                   className={"object-cover w-full h-full"}
                 />
-              </div>
+              </motion.div>
             </div>
-            <div className={"block xl:hidden relative"}>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 0.3 }}
+              className={"block xl:hidden relative"}
+            >
               <Carousel>
                 <CarouselContent>
                   <CarouselItem>
@@ -136,7 +195,7 @@ export default function Hero() {
                   <CarouselNext className="text-steel-blue" />
                 </div>
               </Carousel>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
@@ -145,7 +204,11 @@ export default function Hero() {
           <div onClick={() => setPlayVideo(false)}>
             <BgOverlay />
           </div>
-          <ModalVideo link={'https://www.youtube.com/embed/u1vHdFJW1wA?si=EaGXFHDXFd8bipnw'}/>
+          <ModalVideo
+            link={
+              "https://www.youtube.com/embed/u1vHdFJW1wA?si=EaGXFHDXFd8bipnw"
+            }
+          />
         </>
       )}
     </section>

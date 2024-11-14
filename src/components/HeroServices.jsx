@@ -2,6 +2,7 @@ import { React, useState } from "react";
 import ModalVideo from "./ModalVideo";
 import BgOverlay from "./BgOverlay";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 import hero1 from "../assets/images/services/hero-1.webp";
 import hero2 from "../assets/images/services/hero-2.webp";
@@ -48,28 +49,55 @@ export default function HeroServices() {
                 </h2>
               </div>
             </div>
-            <Link className={"main-btn"}>discover more</Link>
+            <motion.div
+              whileTap={{ scale: 0.9 }}
+              transition={{ duration: 0.3 }}
+            >
+              <Link className={"main-btn"}>discover more</Link>
+            </motion.div>
           </div>
           <div className="w-full lg:w-1/2 relative">
-            <img
+            <motion.img
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.3 }}
               src={hero1}
               alt=""
               className={"w-full max-w-[500px] mx-auto rounded-full"}
             />
-            <img
+            <motion.img
+              initial={{ opacity: 0, x: 10 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1, delay: 0.5 }}
               src={hero2}
               alt=""
               className={
                 "w-44 sm:w-64 rounded-full border-[18px] border-pink-100 absolute left-0 top-[70%] sm:top-[60%]"
               }
             />
+
             <span
               onClick={() => setPlayVideo(true)}
               className={
-                "absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-full cursor-pointer animate-pulse"
+                "absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
               }
             >
-              <FaCirclePlay size={100} className={"text-steel-blue"} />
+              <motion.div
+                initial={{ opacity: 0, scale: 0 }}
+                whileInView={{
+                  opacity: 1,
+                  scale: 1,
+                  transition: { duration: 0.5, delay: 0.5 },
+                }}
+                whileTap={{ scale: 0.9, transition: { duration: 0.3 } }}
+              >
+                <FaCirclePlay
+                  size={100}
+                  className={
+                    "text-steel-blue bg-white rounded-full cursor-pointer animate-pulse"
+                  }
+                />
+              </motion.div>
             </span>
           </div>
         </div>

@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
 
 import { FaPhoneVolume } from "react-icons/fa6";
 import { IoMail } from "react-icons/io5";
@@ -38,6 +39,10 @@ export default function Header() {
     },
   ];
   const [openMenu, setOpenMenu] = useState(false);
+  const [currentPage, setCurrentPage] = useState("");
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [currentPage]);
   return (
     <>
       <div className="block xl:hidden bg-rose-bonbon py-1 border-b border-slate-200">
@@ -96,12 +101,18 @@ export default function Header() {
               </Link>
             </li>
             <li className={"list-social-link-header"}>
-              <Link to="https://www.instagram.com/best_portland_cleaners/" target="_blank">
+              <Link
+                to="https://www.instagram.com/best_portland_cleaners/"
+                target="_blank"
+              >
                 <FaInstagram size={16} />
               </Link>
             </li>
             <li className={"list-social-link-header"}>
-              <Link to="https://www.yelp.com/biz/best-portland-cleaners-portland" target="_blank">
+              <Link
+                to="https://www.yelp.com/biz/best-portland-cleaners-portland"
+                target="_blank"
+              >
                 <FaYelp size={16} />
               </Link>
             </li>
@@ -124,6 +135,7 @@ export default function Header() {
                   <NavLink
                     key={index}
                     to={item.link}
+                    onClick={() => setCurrentPage(item.name)}
                     className={({ isActive }) =>
                       `capitalize ${
                         isActive
@@ -136,14 +148,19 @@ export default function Header() {
                   </NavLink>
                 ))}
               </nav>
-              <NavLink
-                to='/make-an-appointement'
-                className={
-                  "px-4 py-2 bg-rose-bonbon hover:bg-pink-600 text-white transition-colors duration-300 ease-in-out"
-                }
+              <motion.div
+                whileTap={{ scale: 0.9 }}
+                transition={{ duration: 0.3 }}
               >
-                Make an Appointment
-              </NavLink>
+                <NavLink
+                  to="/make-an-appointement"
+                  className={
+                    "px-4 py-2 bg-rose-bonbon hover:bg-pink-600 text-white transition-colors duration-300 ease-in-out"
+                  }
+                >
+                  Make an Appointment
+                </NavLink>
+              </motion.div>
             </div>
             <span
               onClick={() => setOpenMenu(true)}
@@ -178,6 +195,7 @@ export default function Header() {
               <NavLink
                 key={index}
                 to={item.link}
+                onClick={() => {setOpenMenu(false); setCurrentPage(item.name);}}
                 className={({ isActive }) =>
                   `capitalize ${
                     isActive
@@ -185,14 +203,13 @@ export default function Header() {
                       : "text-slate-900 hover:text-rose-bonbon transition-colors duration-300 ease-in-out"
                   }`
                 }
-                onClick={() => setOpenMenu(false)}
               >
                 {item.name}
               </NavLink>
             ))}
           </div>
           <Link
-            to='/make-an-appointement'
+            to="/make-an-appointement"
             className={
               "px-4 py-2 bg-rose-bonbon hover:bg-pink-600 text-white transition-colors duration-300 ease-in-out"
             }
@@ -208,12 +225,18 @@ export default function Header() {
             </Link>
           </li>
           <li className={"list-social-link-menuheader"}>
-            <Link to="https://www.instagram.com/best_portland_cleaners/" target="_blank">
+            <Link
+              to="https://www.instagram.com/best_portland_cleaners/"
+              target="_blank"
+            >
               <FaInstagram size={16} />
             </Link>
           </li>
           <li className={"list-social-link-menuheader"}>
-            <Link to="https://www.yelp.com/biz/best-portland-cleaners-portland" target="_blank">
+            <Link
+              to="https://www.yelp.com/biz/best-portland-cleaners-portland"
+              target="_blank"
+            >
               <FaYelp size={16} />
             </Link>
           </li>

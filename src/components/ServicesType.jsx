@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper/modules";
+import { motion } from "framer-motion";
 
 import { FaCheck } from "react-icons/fa";
 import { Link } from "react-router-dom";
@@ -18,10 +19,10 @@ export default function ServicesType() {
         <Swiper
           pagination={{ clickable: true }}
           loop={true}
-            autoplay={{
-              delay: 3000,
-              disableOnInteraction: false,
-            }}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
           modules={[Pagination, Autoplay]}
           className="mySwiper"
         >
@@ -87,17 +88,30 @@ export default function ServicesType() {
                     </li>
                   </div>
                 </ul>
-                <Link to='/make-an-appointement' className={"main-btn py-3"}>make an appointement</Link>
+                <motion.div
+                  whileTap={{ scale: 0.9 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <Link to="/make-an-appointement" className={"main-btn py-3"}>
+                    make an appointement
+                  </Link>
+                </motion.div>
               </div>
               <div className="w-full lg:w-1/2 relative">
-                <img
+                <motion.img
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 1 }}
                   src={ImageType1}
                   alt=""
                   className={
                     "w-full max-w-[450px] mx-auto lg:ml-auto lg:mr-6 rounded-sm shadow-xl"
                   }
                 />
-                <img
+                <motion.img
+                  initial={{ opacity: 0, x: -10 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.3, delay: 0.5 }}
                   src={discount}
                   alt=""
                   className={
@@ -169,17 +183,30 @@ export default function ServicesType() {
                     </li>
                   </div>
                 </ul>
-                <Link to='/make-an-appointement' className={"main-btn py-3"}>make an appointement</Link>
+                <motion.div
+                  whileTap={{ scale: 0.9 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <Link to="/make-an-appointement" className={"main-btn py-3"}>
+                    make an appointement
+                  </Link>
+                </motion.div>
               </div>
               <div className="w-full lg:w-1/2 relative">
-                <img
+                <motion.img
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 1 }}
                   src={ImageType2}
                   alt=""
                   className={
                     "w-full max-w-[450px] mx-auto lg:ml-auto lg:mr-6 rounded-sm shadow-xl"
                   }
                 />
-                <img
+                <motion.img
+                  initial={{ opacity: 0, x: -10 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.3, delay: 0.5 }}
                   src={discount}
                   alt=""
                   className={

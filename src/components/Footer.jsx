@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import logo from "../assets/images/logo/white-logo.png";
@@ -9,6 +9,10 @@ import { FaMailBulk } from "react-icons/fa";
 import { FaPhoneVolume } from "react-icons/fa6";
 
 export default function Footer() {
+  const [currentPage, setCurrentPage] = useState("");
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [currentPage]);
   return (
     <footer className={"bg-rose-bonbon"}>
       <div className="container">
@@ -22,20 +26,41 @@ export default function Footer() {
           </Link>
           <ul className={"flex gap-6"}>
             <li className={"text-slate-100 hover:text-white capitalize"}>
-              <Link to='https://www.facebook.com/BPDXCleaners' target="_blank" >facebook</Link>
+              <Link to="https://www.facebook.com/BPDXCleaners" target="_blank">
+                facebook
+              </Link>
             </li>
             <li className={"text-slate-100 hover:text-white capitalize"}>
-              <Link to='https://www.instagram.com/best_portland_cleaners/' target="_blank" >instagram</Link>
+              <Link
+                to="https://www.instagram.com/best_portland_cleaners/"
+                target="_blank"
+              >
+                instagram
+              </Link>
             </li>
             <li className={"text-slate-100 hover:text-white capitalize"}>
-              <Link to='https://www.youtube.com/@Bestportlandcleaners' target="_blank" >youtube</Link>
+              <Link
+                to="https://www.youtube.com/@Bestportlandcleaners"
+                target="_blank"
+              >
+                youtube
+              </Link>
             </li>
             <li className={"text-slate-100 hover:text-white capitalize"}>
-              <Link to='https://www.yelp.com/biz/best-portland-cleaners-portland' target="_blank" >yelp</Link>
+              <Link
+                to="https://www.yelp.com/biz/best-portland-cleaners-portland"
+                target="_blank"
+              >
+                yelp
+              </Link>
             </li>
           </ul>
         </div>
-        <div className={"py-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10"}>
+        <div
+          className={
+            "py-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10"
+          }
+        >
           <div>
             <h1 className={"title-footer"}>about us</h1>
             <p className={"text-zinc-50"}>
@@ -56,31 +81,51 @@ export default function Footer() {
             <h1 className={"title-footer"}>Quick Links</h1>
             <ul className={"leading-8"}>
               <li className={"list-footer-link"}>
-                <Link to="/" className={"flex items-center gap-1"}>
+                <Link
+                  to="/"
+                  className={"flex items-center gap-1"}
+                  onClick={() => setCurrentPage("home")}
+                >
                   <IoMdArrowDropright size={24} />
                   <span>home</span>
                 </Link>
               </li>
               <li className={"list-footer-link"}>
-                <Link to="/about" className={"flex items-center gap-1"}>
+                <Link
+                  to="/about"
+                  className={"flex items-center gap-1"}
+                  onClick={() => setCurrentPage("about")}
+                >
                   <IoMdArrowDropright size={24} />
                   <span>about us</span>
                 </Link>
               </li>
               <li className={"list-footer-link"}>
-                <Link to="/services" className={"flex items-center gap-1"}>
+                <Link
+                  to="/services"
+                  className={"flex items-center gap-1"}
+                  onClick={() => setCurrentPage("services")}
+                >
                   <IoMdArrowDropright size={24} />
                   <span>our services</span>
                 </Link>
               </li>
               <li className={"list-footer-link"}>
-                <Link to="/ourworks" className={"flex items-center gap-1"}>
+                <Link
+                  to="/ourworks"
+                  className={"flex items-center gap-1"}
+                  onClick={() => setCurrentPage("ourworks")}
+                >
                   <IoMdArrowDropright size={24} />
                   <span>our works</span>
                 </Link>
               </li>
               <li className={"list-footer-link"}>
-                <Link to="/contact" className={"flex items-center gap-1"}>
+                <Link
+                  to="/contact"
+                  className={"flex items-center gap-1"}
+                  onClick={() => setCurrentPage("contact")}
+                >
                   <IoMdArrowDropright size={24} />
                   <span>contact</span>
                 </Link>
@@ -91,31 +136,51 @@ export default function Footer() {
             <h1 className={"title-footer"}>what we do ?</h1>
             <ul className={"leading-8"}>
               <li className={"list-footer-link"}>
-                <Link to="/services" className={"flex items-center gap-1"}>
+                <Link
+                  to="/services"
+                  className={"flex items-center gap-1"}
+                  onClick={() => setCurrentPage("services")}
+                >
                   <IoMdArrowDropright size={24} />
                   <span>Office Cleaning Service</span>
                 </Link>
               </li>
               <li className={"list-footer-link"}>
-                <Link to="/services" className={"flex items-center gap-1"}>
+                <Link
+                  to="/services"
+                  className={"flex items-center gap-1"}
+                  onClick={() => setCurrentPage("services")}
+                >
                   <IoMdArrowDropright size={24} />
                   <span>Move-in & Move-out</span>
                 </Link>
               </li>
               <li className={"list-footer-link"}>
-                <Link to="/services" className={"flex items-center gap-1"}>
+                <Link
+                  to="/services"
+                  className={"flex items-center gap-1"}
+                  onClick={() => setCurrentPage("services")}
+                >
                   <IoMdArrowDropright size={24} />
                   <span>Standard Home Cleaning</span>
                 </Link>
               </li>
               <li className={"list-footer-link"}>
-                <Link to="/services" className={"flex items-center gap-1"}>
+                <Link
+                  to="/services"
+                  className={"flex items-center gap-1"}
+                  onClick={() => setCurrentPage("services")}
+                >
                   <IoMdArrowDropright size={24} />
                   <span>Home Deep Cleaning</span>
                 </Link>
               </li>
               <li className={"list-footer-link"}>
-                <Link to="/services" className={"flex items-center gap-1"}>
+                <Link
+                  to="/services"
+                  className={"flex items-center gap-1"}
+                  onClick={() => setCurrentPage("services")}
+                >
                   <IoMdArrowDropright size={24} />
                   <span>Window Cleaning</span>
                 </Link>
@@ -175,26 +240,35 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className={"py-3 flex flex-col lg:flex-row lg:items-center justify-center lg:justify-between space-y-2 border-t border-neutral-50"}>
+        <div
+          className={
+            "py-3 flex flex-col lg:flex-row lg:items-center justify-center lg:justify-between space-y-2 border-t border-neutral-50"
+          }
+        >
           <p className={"text-zinc-50 text-center"}>
             &copy; 2024{" "}
             <Link to="/" className={"text-white hover:text-pink-100 font-bold"}>
               Best Portland Cleaners
             </Link>
-            , All Right Reserved. Designed By <Link className={"text-white hover:text-pink-100 font-bold"}>Yassine_ChM</Link>
+            , All Right Reserved. Designed By{" "}
+            <Link className={"text-white hover:text-pink-100 font-bold"}>
+              Yassine_ChM
+            </Link>
           </p>
-          <div className={'flex items-center gap-x-2 justify-center'}>
+          <div className={"flex items-center gap-x-2 justify-center"}>
             <Link
-            to='/faq'
+              to="/faq"
+              onClick={() => setCurrentPage("faq")}
               className={
                 "text-zinc-50 hover:text-white capitalize transition-colors duration-300 ease-in-out"
               }
             >
               FAQ's
             </Link>
-            <span className={'text-zinc-50'}>-</span>
+            <span className={"text-zinc-50"}>-</span>
             <Link
-              to='/privacy-policy'
+              to="/privacy-policy"
+              onClick={() => setCurrentPage("privacy-policy")}
               className={
                 "text-zinc-50 hover:text-white capitalize transition-colors duration-300 ease-in-out"
               }

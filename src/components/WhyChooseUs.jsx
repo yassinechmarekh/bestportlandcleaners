@@ -1,7 +1,8 @@
-import {React, useState} from "react";
+import { React, useState } from "react";
 import { Link } from "react-router-dom";
 import ModalVideo from "./ModalVideo";
 import BgOverlay from "./BgOverlay";
+import { motion } from "framer-motion";
 
 import { FaCheckCircle } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
@@ -11,40 +12,51 @@ import mainImage from "../assets/images/why-choose-us/1.webp";
 import secondImage from "../assets/images/why-choose-us/2.webp";
 
 export default function WhyChooseUs() {
-const [playVideo, setPlayVideo] = useState(false);
+  const [playVideo, setPlayVideo] = useState(false);
   return (
     <section className="py-10 bg-pink-100">
       <div className="container">
         <div className="flex flex-col lg:flex-row items-center gap-8">
           <div className="hidden lg:block w-2/5 xl:w-1/2 relative">
-            <img
+            <motion.img
+              initial={{ x: -100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 1, delay: 0.7 }}
               src={secondImage}
               alt=""
               className={
-                "hidden xl:block w-48 h-48 absolute top-0 left-0 rounded-full border-[14px] border-steel-blue"
+                "hidden xl:block w-48 h-48 absolute top-0 left-0 rounded-full border-[14px] border-steel-blue z-10"
               }
             />
-            <img
+            <motion.img
+              initial={{ opacity: 0.5 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 1 }}
               src={mainImage}
               alt=""
-              className={"w-full rounded-full border-[14px] border-rose-bonbon"}
+              className={
+                "w-full rounded-full border-[14px] border-rose-bonbon z-0"
+              }
             />
-            <span className="bg-white rounded-full absolute bottom-0 right-10 xl:right-24 animate-pulse cursor-pointer" onClick={() => setPlayVideo(true)}>
+            <motion.span
+              initial={{ scale: 0 }}
+              whileInView={{ scale: 1 }}
+              whileTap={{ scale: 0.9 }}
+              transition={{ duration: 0.3 }}
+              className="bg-white rounded-full absolute bottom-0 right-10 xl:right-24 animate-pulse cursor-pointer z-10"
+              onClick={() => setPlayVideo(true)}
+            >
               <FaCirclePlay
                 size={80}
                 className={
                   "text-steel-blue hover:text-sky-900 transition-colors duration-300 ease-in-out"
                 }
               />
-            </span>
+            </motion.span>
           </div>
           <div className="w-full lg:w-3/5 xl:w-1/2">
-            <h5 className={"subtitle"}>
-              Our Introduction
-            </h5>
-            <h1 className="big-title">
-              Welcome to Best Cleaning Company
-            </h1>
+            <h5 className={"subtitle"}>Our Introduction</h5>
+            <h1 className="big-title">Welcome to Best Cleaning Company</h1>
             <p className={"text-steel-blue font-semibold leading-6 mb-2"}>
               Lorem ipsum dolor sit amet consectetur suspendisse nulla aliquam.
               Risus rutrum tellus ultrices amet facilisis.
@@ -90,7 +102,11 @@ const [playVideo, setPlayVideo] = useState(false);
               </div>
             </ul>
             <div className={"flex flex-col xs:flex-row items-center gap-8"}>
-              <Link to='/about' className={"second-btn"}>discover more</Link>
+              <motion.div whileTap={{ scale: 0.9 }} transition={{ duration: 0.3 }}>
+                <Link to="/about" className={"second-btn"}>
+                  discover more
+                </Link>
+              </motion.div>
               <Link to="tel:+15034655331" className={"flex items-center gap-2"}>
                 <span className="p-3 bg-steel-blue rounded-full animate-pulse">
                   <FaPhoneAlt size={20} className={"text-white"} />
@@ -108,7 +124,11 @@ const [playVideo, setPlayVideo] = useState(false);
           <div onClick={() => setPlayVideo(false)}>
             <BgOverlay />
           </div>
-          <ModalVideo link={'https://www.youtube.com/embed/67XAib2TzAg?si=mp3hN_KhBIFKz4NL'}/>
+          <ModalVideo
+            link={
+              "https://www.youtube.com/embed/67XAib2TzAg?si=mp3hN_KhBIFKz4NL"
+            }
+          />
         </>
       )}
     </section>

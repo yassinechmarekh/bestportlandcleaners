@@ -114,6 +114,9 @@ export default function AppointementForm() {
                   placeholder="Select your preferable type"
                   items={serviceTypes}
                 />
+                <FormDescription className={"xs:hidden"}>
+                  Select your preferable type
+                </FormDescription>
               </div>
               <div className={"w-full lg:w-1/2"}>
                 <MySelect
@@ -121,6 +124,7 @@ export default function AppointementForm() {
                   placeholder="Select your preferable time"
                   items={times}
                 />
+                <FormDescription className={"xs:hidden"}>Select your preferable time</FormDescription>
               </div>
             </div>
             <div>
@@ -147,7 +151,7 @@ export default function AppointementForm() {
                   placeholder="Select number of your bedrooms"
                   items={bedrooms}
                 />
-                <FormDescription>
+                <FormDescription className={"xs:hidden"}>
                   Select number of your bedrooms
                 </FormDescription>
               </div>
@@ -157,7 +161,7 @@ export default function AppointementForm() {
                   placeholder="Select number of your bathrooms"
                   items={bathrooms}
                 />
-                <FormDescription>
+                <FormDescription className={"xs:hidden"}>
                   Select number of your bathrooms
                 </FormDescription>
               </div>
@@ -169,7 +173,7 @@ export default function AppointementForm() {
                   placeholder="Select number of your rooms"
                   items={rooms}
                 />
-                <FormDescription>Select number of your rooms</FormDescription>
+                <FormDescription className={"xs:hidden"}>Select number of your rooms</FormDescription>
               </div>
               <div className={"w-full lg:w-1/2"}>
                 <MyInput

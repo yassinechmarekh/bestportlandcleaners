@@ -38,7 +38,7 @@ export default function Hero() {
               transition={{ transition: 5, delay: 0.3 }}
               className={"text-2xl text-steel-blue font-semibold capitalize"}
             >
-              Your Trusted Cleaning Partner
+              We Keep All Clean
             </motion.h5>
             <motion.h1
               initial={{ x: -100, opacity: 0 }}
@@ -48,7 +48,7 @@ export default function Hero() {
                 "text-6xl 2xl:text-8xl text-white font-title font-bold leading-tight 2xl:leading-snug mb-4"
               }
             >
-              Professional Cleaning for a Healthier
+              Cleaning For A Healthier Home
             </motion.h1>
             <motion.p
               initial={{ x: -100, opacity: 0 }}

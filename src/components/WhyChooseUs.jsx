@@ -55,17 +55,17 @@ export default function WhyChooseUs() {
             </motion.span>
           </div>
           <div className="w-full lg:w-3/5 xl:w-1/2">
-            <h5 className={"subtitle"}>Our Introduction</h5>
+            <h5 className={"subtitle"}>Get to Know Us</h5>
             <h1 className="big-title">Welcome to Best Cleaning Company</h1>
             <p className={"text-steel-blue font-semibold leading-6 mb-2"}>
-              Lorem ipsum dolor sit amet consectetur suspendisse nulla aliquam.
-              Risus rutrum tellus ultrices amet facilisis.
+              We provide expert cleaning solutions tailored for homes and
+              businesses. Trust us to keep your spaces spotless and welcoming.
             </p>
             <p className="parag">
-              Commodo dictum iaculis eget mas phasellus ultrices nunc dignissim.
-              Id nulla amet tincidunt urna sed massa the sed massa ultrices amet
-              a egetristique maecenas condimentum dolor. dictum iaculis eget
-              more amet tincidunt urna massa done.
+              From residential to commercial cleaning, our insured and bonded
+              team ensures top-quality results. Highly rated and trusted, we
+              deliver unmatched service with every visit. Experience a cleaner,
+              healthier environment with us.
             </p>
             <ul
               className={
@@ -75,7 +75,7 @@ export default function WhyChooseUs() {
               <div>
                 <li className={"list-why-choose-us"}>
                   <FaCheckCircle size={16} />
-                  <span>We are Committed</span>
+                  <span>Committed to Quality</span>
                 </li>
                 <li className={"list-why-choose-us"}>
                   <FaCheckCircle size={16} />
@@ -102,7 +102,10 @@ export default function WhyChooseUs() {
               </div>
             </ul>
             <div className={"flex flex-col xs:flex-row items-center gap-8"}>
-              <motion.div whileTap={{ scale: 0.9 }} transition={{ duration: 0.3 }}>
+              <motion.div
+                whileTap={{ scale: 0.9 }}
+                transition={{ duration: 0.3 }}
+              >
                 <Link to="/about" className={"second-btn"}>
                   discover more
                 </Link>

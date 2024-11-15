@@ -12,24 +12,24 @@ export default function Arguments() {
     {
       id: 1,
       image: argumentImg1,
-      subtitle: "argurment 1",
-      title: "Reliable and Trustworthy Cleaning Service",
+      subtitle: "Reliable and Trustworthy Cleaning Service",
+      title: "Your Trusted Partner for Clean Spaces",
       description:
         "When you live a busy life, it is hard to find the time to organize and tidy your home or vacation rental. You can rely on us to take care of your property so that you can focus on the things that are important to you.",
     },
     {
       id: 2,
       image: argumentImg2,
-      subtitle: "argurment 2",
-      title: "We Care About the Details",
+      subtitle: "We Care About the Details",
+      title: "Exceeding Expectations with Every Clean",
       description:
         "Our company pays special attention to the details of every project to ensure the complete satisfaction of each client. ​Our goal is to make sure that we leave your home with sparkling kitchen, bathrooms, and floors, organized and tidy living spaces, and refreshing aromas of cleanliness.",
     },
     {
       id: 3,
       image: argumentImg3,
-      subtitle: "argurment 3",
-      title: "Customer Satisfaction Guaranteed 24 hours Fixing Policy",
+      subtitle: "Customer Satisfaction Guaranteed",
+      title: "24-Hour Fixing Policy for Your Peace of Mind",
       description:
         "Your satisfaction is our priority and we strive to provide a service we are proud of. Please give us a call within the 24 hours of your service and we will fix any issues at no cost.",
     },
@@ -40,7 +40,7 @@ export default function Arguments() {
         <TopSection
           subtitle="What We Do"
           title="Providing the Best Services for Our Customers"
-          intro="Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, laborum assumenda? Consequatur, consequuntur ipsam! Sequi maiores tenetur doloremque totam et?"
+          intro="We are committed to offering exceptional cleaning services tailored to your needs. Whether you need help with your home or business, we’ve got you covered."
         />
         <div className={"flex flex-col gap-y-14"}>
           {argumentItems.map((item) => (

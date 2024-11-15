@@ -38,9 +38,9 @@ export default function ServicesType() {
                   Residential Cleaning
                 </h2>
                 <p className={"my-3 text-zinc-50 leading-6"}>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
-                  nihil voluptatum facilis eius ut expedita aperiam eligendi quo
-                  aut suscipit?
+                  Transform your living spaces with professional cleaning
+                  tailored to your needs. From deep cleans to regular upkeep, we
+                  ensure spotless results every time.
                 </p>
                 <ul className="grid grid-cols-1 xs:grid-cols-2 xs:gap-4 mb-6 text-zinc-50 leading-8">
                   <div>
@@ -50,7 +50,7 @@ export default function ServicesType() {
                     </li>
                     <li className={"flex items-center gap-2"}>
                       <FaCheck size={16} />
-                      <span>Bedrooms Living Rooms</span>
+                      <span>Bedrooms & Living Rooms</span>
                     </li>
                     <li className={"flex items-center gap-2"}>
                       <FaCheck size={16} />
@@ -58,11 +58,11 @@ export default function ServicesType() {
                     </li>
                     <li className={"flex items-center gap-2"}>
                       <FaCheck size={16} />
-                      <span>Seasonal</span>
+                      <span>Seasonal Cleaning</span>
                     </li>
                     <li className={"flex items-center gap-2"}>
                       <FaCheck size={16} />
-                      <span>Post construction</span>
+                      <span>Post-Construction</span>
                     </li>
                   </div>
                   <div>
@@ -76,7 +76,7 @@ export default function ServicesType() {
                     </li>
                     <li className={"flex items-center gap-2"}>
                       <FaCheck size={16} />
-                      <span>Carpet</span>
+                      <span>Carpet Cleaning</span>
                     </li>
                     <li className={"flex items-center gap-2"}>
                       <FaCheck size={16} />
@@ -84,7 +84,7 @@ export default function ServicesType() {
                     </li>
                     <li className={"flex items-center gap-2"}>
                       <FaCheck size={16} />
-                      <span>Еxpress</span>
+                      <span>Express Cleaning</span>
                     </li>
                   </div>
                 </ul>
@@ -133,9 +133,9 @@ export default function ServicesType() {
                   Commercial Cleaning
                 </h2>
                 <p className={"my-3 text-zinc-50 leading-6"}>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
-                  nihil voluptatum facilis eius ut expedita aperiam eligendi quo
-                  aut suscipit?
+                  Keep your business spaces spotless and welcoming with our
+                  expert cleaning services. Designed for offices, shops, and
+                  more, we ensure a professional and hygienic environment.
                 </p>
                 <ul className="grid grid-cols-1 xs:grid-cols-2 xs:gap-4 mb-6 text-zinc-50 leading-8">
                   <div>

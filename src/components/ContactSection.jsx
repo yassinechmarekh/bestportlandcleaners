@@ -17,7 +17,7 @@ export default function ContactSection() {
         <TopSection
           subtitle="Let's talk?"
           title="Get In Touch"
-          intro="Everything melancholy uncommonly but solicitude inhabiting projection off. Connection stimulated estimating excellence an to impression."
+          intro="We’re here to help with any questions or inquiries. Feel free to reach out, and we’ll respond promptly to assist you."
         />
         <div className={"flex flex-col lg:flex-row shadow-xl border"}>
           <div className="w-full lg:w-3/5">

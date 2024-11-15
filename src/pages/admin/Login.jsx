@@ -30,9 +30,8 @@ export default function Login() {
           <div className="relative z-20 mt-auto">
             <blockquote className="space-y-2">
               <p className="text-lg">
-                &ldquo;Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Perspiciatis voluptas beatae soluta eligendi nesciunt
-                adipisci.&rdquo;
+                &ldquo; Welcome, Admin! You can log in to manage your website
+                and access all the admin features. &rdquo;
               </p>
               <footer className="text-sm">&copy; Best Portland Cleaners</footer>
             </blockquote>

@@ -64,7 +64,7 @@ export default function AppointementForm() {
         <TopSection
           subtitle="Make an appointement"
           title="Let us take care of your home"
-          intro="Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, laborum assumenda? Consequatur, consequuntur ipsam! Sequi maiores tenetur doloremque totam et?"
+          intro="We understand the importance of a clean home. Let our experts handle the hard work while you enjoy a fresh, tidy space. Book your appointment today !"
         />
         <form className="w-full lg:w-4/5 mx-auto flex flex-col gap-y-6 px-6 py-10 border border-steel-blue rounded-lg shadow-2xl">
           <div className={"flex flex-col lg:flex-row gap-6 lg:gap-4"}>

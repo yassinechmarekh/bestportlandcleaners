@@ -38,7 +38,7 @@ export default function Hero() {
               transition={{ transition: 5, delay: 0.3 }}
               className={"text-2xl text-steel-blue font-semibold capitalize"}
             >
-              We Keep All Clean
+              Your Trusted Cleaning Partner
             </motion.h5>
             <motion.h1
               initial={{ x: -100, opacity: 0 }}
@@ -48,7 +48,7 @@ export default function Hero() {
                 "text-6xl 2xl:text-8xl text-white font-title font-bold leading-tight 2xl:leading-snug mb-4"
               }
             >
-              Cleaning For A Healthier Home
+              Professional Cleaning for a Healthier
             </motion.h1>
             <motion.p
               initial={{ x: -100, opacity: 0 }}
@@ -56,9 +56,11 @@ export default function Hero() {
               transition={{ transition: 5, delay: 0.7 }}
               className={"text-zinc-50 mb-6"}
             >
-              There are many variations of passages of Lorem Ipsum available,
-              but the majority have suffered alteration in some form, by
-              injected If you are going to use a passage of Lorem Ipsum, you
+              Discover top-tier cleaning services designed to create a
+              healthier, more welcoming environment in your home. With our
+              attention to detail and commitment to quality, we ensure spotless
+              spaces that bring peace of mind. Experience the difference of a
+              truly clean home with our expert team.
             </motion.p>
             <div className="flex items-center gap-6">
               <motion.div
@@ -69,8 +71,8 @@ export default function Hero() {
                 }}
                 whileTap={{ scale: 0.9, transition: { duration: 0.3 } }}
               >
-                <Link to="/services" className={"main-btn"}>
-                  explore more
+                <Link to="/about" className={"main-btn"}>
+                Learn More
                 </Link>
               </motion.div>
               <motion.button

@@ -8,8 +8,8 @@ export default function OurWorks() {
       <div className="container">
         <TopSection
           subtitle="SUCCESSFUL PROJECT"
-          title="Keep your vision to our latest projects"
-          intro="Everything melancholy uncommonly but solicitude inhabiting projection off. Connection stimulated estimating excellence an to impression. Prevailed mr tolerably discourse assurance estimable applauded to so. Him everything melancholy uncommonly but solicitude inhabiting projection."
+          title="Our Latest Projects"
+          intro="Our projects are a testament to excellence and attention to detail. We consistently deliver results that exceed expectations, ensuring your vision is brought to life with precision and care."
         />
         <WorkItems />
       </div>

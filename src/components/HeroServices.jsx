@@ -23,9 +23,9 @@ export default function HeroServices() {
               Your Happiness Is Our Frist Priority
             </h1>
             <p className={"parag"}>
-              Commodo dictum iaculis eget mas phasellus ultrices nunc dignissim.
-              Id nulla amet tincidunt urna sed massa the sed massa ultrices amet
-              a dictum amet tincidunt massa done.
+              We take pride in offering top-tier cleaning services tailored to
+              your needs. Our expert team ensures a spotless, comfortable
+              environment every time, so you can relax and enjoy your space.
             </p>
             <div className={"my-6 grid grid-cols-1 xs:grid-cols-2 gap-4"}>
               <div
@@ -53,7 +53,7 @@ export default function HeroServices() {
               whileTap={{ scale: 0.9 }}
               transition={{ duration: 0.3 }}
             >
-              <Link className={"main-btn"}>discover more</Link>
+              <a href="#servicescards" className={"main-btn"}>discover more</a>
             </motion.div>
           </div>
           <div className="w-full lg:w-1/2 relative">

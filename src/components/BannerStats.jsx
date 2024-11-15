@@ -18,8 +18,8 @@ export default function BannerStats() {
       value: "32",
     },
     {
-      name: "Trusted Clients",
-      value: "928",
+      name: "Customer Satisfaction Rate",
+      value: "837",
     },
   ];
   return (

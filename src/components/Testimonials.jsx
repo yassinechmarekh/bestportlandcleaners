@@ -47,8 +47,8 @@ export default function Testimonials() {
     <section className={"py-10 bg-pink-100"}>
       <div className="container">
         <TopSection
-          subtitle="What We’re Offering"
-          title="Providing the Best Services for Our Customers"
+          subtitle="What Our Customers Are Saying"
+          title="Delivering the Best Services to Our Clients"
           intro=""
         />
         <div className="">

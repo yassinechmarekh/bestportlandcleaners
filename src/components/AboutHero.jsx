@@ -24,7 +24,7 @@ export default function AboutHero() {
               />
               <motion.img
                 initial={{ opacity: 0, x: -10 }}
-                whileInView={{ opacity:1, x:0 }}
+                whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
                 src={main2}
                 alt=""
@@ -32,7 +32,12 @@ export default function AboutHero() {
                   "w-52 xl:w-64 hidden lg:block rounded-full border-[18px] border-pink-100 absolute top-[70%] xl:top-[60%] right-0 -translate-x-0"
                 }
               />
-              <motion.div initial={{ opacity: 0, x: 10 }} whileInView={{ opacity: 1, x:0 }} transition={{ duration: 0.5, delay: 0.3 }} className="absolute top-0 -right-4 hidden xl:flex flex-col items-center gap-y-14">
+              <motion.div
+                initial={{ opacity: 0, x: 10 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                className="absolute top-0 -right-4 hidden xl:flex flex-col items-center gap-y-14"
+              >
                 <span className={"text-6xl text-steel-blue font-bold"}>25</span>
                 <span
                   className={
@@ -45,21 +50,29 @@ export default function AboutHero() {
             </div>
           </div>
           <div className="w-full lg:w-1/2">
-            <h5 className="subtitle mb-1">What We Are</h5>
-            <h1 className={'big-title'}>We are committed to give our best services</h1>
-            <p className={'text-steel-blue font-semibold leading-6 mb-2'}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-              iusto aliquam ad odit officiis?
+            <h5 className="subtitle mb-1">Who We Are</h5>
+            <h1 className={"big-title"}>
+              Committed to Delivering Our Best Services
+            </h1>
+            <p className={"text-steel-blue font-semibold leading-6 mb-2"}>
+              We take pride in offering exceptional services tailored to meet
+              your needs. Our dedicated team ensures high-quality results every
+              time.
             </p>
-            <p className={'parag mb-4'}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
-              architecto repudiandae sint nulla rem similique officiis illum
-              molestias fuga beatae, dolor consequatur? Error sed perspiciatis
-              dolorem repellat ab! Tempora, esse.
+            <p className={"parag mb-4"}>
+              With years of experience, we focus on delivering reliable,
+              efficient, and personalized solutions. Whether it’s a one-time
+              service or ongoing support, our commitment to excellence remains
+              the same.
             </p>
             <div className={"flex flex-col xs:flex-row items-center gap-8"}>
-              <motion.div whileTap={{ scale: 0.9 }} transition={{ duration: 0.3 }}>
-              <Link to='/contact' className={"second-btn"}>contact us</Link>
+              <motion.div
+                whileTap={{ scale: 0.9 }}
+                transition={{ duration: 0.3 }}
+              >
+                <Link to="/contact" className={"second-btn"}>
+                  contact us
+                </Link>
               </motion.div>
               <Link to="tel:+15034655331" className={"flex items-center gap-2"}>
                 <span className="p-3 bg-steel-blue rounded-full animate-pulse">

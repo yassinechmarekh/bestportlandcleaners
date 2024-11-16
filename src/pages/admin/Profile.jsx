@@ -29,7 +29,9 @@ export default function Profile() {
           <form>
             <div class="space-y-12">
               <div class="border-b border-gray-900/10 pb-12">
-                <h2 class="text-base/7 font-semibold text-rose-bonbon">Profile</h2>
+                <h2 class="text-base/7 font-semibold text-rose-bonbon">
+                  Profile
+                </h2>
                 <p class="mt-1 text-sm/6 text-gray-600">
                   This information will be displayed publicly so be careful what
                   you share.
@@ -125,6 +127,33 @@ export default function Profile() {
                       placeholder="Email"
                       type="email"
                       id="email"
+                    />
+                  </div>
+
+                  <div class="sm:col-span-2">
+                    <MyInput
+                      label="Current Password"
+                      placeholder="Your current password"
+                      type="password"
+                      id="current-password"
+                    />
+                  </div>
+
+                  <div class="sm:col-span-2">
+                    <MyInput
+                      label="New Password"
+                      placeholder="New password"
+                      type="password"
+                      id="new-password"
+                    />
+                  </div>
+
+                  <div class="sm:col-span-2">
+                    <MyInput
+                      label="Confirm Password"
+                      placeholder="Confirm password"
+                      type="password"
+                      id="confirm-password"
                     />
                   </div>
                 </div>

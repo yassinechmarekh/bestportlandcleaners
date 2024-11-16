@@ -35,7 +35,7 @@ export default function HeroServices() {
               >
                 <img src={residentialIcon} alt="" className={"w-24"} />
                 <h2 className="text-xl text-steel-blue font-bold capitalize">
-                  Residential Cleaning Services
+                  Commercial Cleaning Services
                 </h2>
               </div>
               <div
